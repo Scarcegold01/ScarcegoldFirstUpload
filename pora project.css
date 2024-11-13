@@ -1,0 +1,103 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.main_container {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/road.jpg');
+  background-position: center;
+  background-size: cover;
+
+  /*background-color: skyblue;*/
+}
+.header_container {
+  width: 100%;
+  height: 10vh;
+  /*background-color: rgb(0, 0, 0, 0.7);*/
+}
+.pora_container {
+  width: 70px;
+  height: 5vh;
+  background-color: aliceblue;
+  border-radius: 15px;
+  display: block;
+  padding: 4px 15px;
+}
+.pora_container:hover {
+  background-color: darkgray;
+}
+.inner_header_container {
+  padding: 0px 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+.header_button {
+  margin: 0px 3px;
+  padding: 4px 4px;
+  border: 2px solid aliceblue;
+  border-radius: 9px;
+  border-color: aquamarine;
+  cursor: pointer;
+  color: gray;
+}
+.header_button:hover {
+  background-color: gray;
+  color: orange;
+  border-color: magenta;
+  transition: border-color 0.75s;
+  transition-timing-function: ease-in-out;
+}
+#main_content_container {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#inner_main_content_container {
+  width: 100%;
+  height: 150px;
+  background-color: rgb(255, 228, 196, 0.2);
+  padding-left: 150px;
+  padding-top: 50px;
+}
+.main_innest_content_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.content_h2 {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: serif;
+  color: coral;
+}
+.container_button {
+  padding-right: 15px;
+  padding-bottom: 40px;
+  width: 80px;
+}
+.content_button {
+  margin-bottom: 15px;
+  width: 80px;
+  height: 30px;
+  border: 2px solid aliceblue;
+  border-radius: 9px;
+  border-color: aquamarine;
+  cursor: pointer;
+  color: gray;
+}
+.content_button:hover {
+  background-color: chocolate;
+  color: gold;
+}
+.container_planet {
+  padding-left: 30px;
+  margin-bottom: px;
+}
+.word_planet_span {
+  color: burlywood;
+}
