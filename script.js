@@ -261,3 +261,93 @@ tips.push;
 console.log(tips);
 const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(totals);
+// codewars
+function areYouPlayingBanjo(name) {
+  // Implement me
+
+  if (name.charAt(0) === `R` || name.charAt(0) === `r`) {
+    return `${name} plays banjo`;
+  } else {
+    return `${name} does not play banjo`;
+  }
+}
+console.log(areYouPlayingBanjo('ramos'));
+
+//codewars
+//codewars
+//codewars
+function smash(words) {
+  let sum = '';
+  for (let i = 0; i < words.length; i++) {
+    sum += words[i];
+    if (i < words.length - 1) {
+      sum += ' ';
+    }
+  }
+  return sum.trim();
+}
+console.log(smash(['hello', 'world', 'this', 'is', 'great']));
+
+//codewars
+//codewars
+//codewars
+function nbYear(p0, percent, aug, p) {
+  // your code
+  'strict mode';
+  let numYear = p0;
+  let i = 0;
+  while (numYear < p) {
+    numYear += (numYear * percent) / 100 + Math.trunc(aug);
+    i++;
+  }
+  return i + `years`;
+}
+console.log(nbYear(1500, 5, 100, 5000));
+//codewars
+//codewars
+//codewars
+function findNeedle(haystack) {
+  // your code here
+  let i = 1;
+  while (i < haystack.length) {
+    if (haystack[i] === 'needle') break;
+    i++;
+  }
+
+  return `found the needle at position ${i}`;
+}
+console.log(
+  findNeedle(['hay', 'junk', 'hay', 'hay', 'moreJunk', 'needle', 'randomJunk']),
+);
+//codewars
+//codewars
+//codewars
+const binaryArrayToNumber = (arr) => {
+  // your code
+  let decimal = 0;
+  for (let i = 0; i < arr.length; i++) {
+    decimal += arr[i] * 2 ** (arr.length - 1 - i);
+  }
+  return decimal;
+};
+console.log(binaryArrayToNumber([0, 0, 0, 1]));
+//codewars
+//codewars
+function numberToString(num) {
+  // Return a string of the number here!
+  return String(num);
+}
+console.log(numberToString(123));
+
+//codewars
+//codewars
+//codewars
+function findShort(s) {
+  const arrString = s.split(' ');
+  let shortWord = arrString[0];
+  for (let i = 0; i < arrString.length; i++) {
+    if (arrString[i].length < shortWord.length) shortWord = arrString[i];
+  }
+  return shortWord.length;
+}
+console.log(findShort('bitcoin take over the world maybe who knows perhaps'));
